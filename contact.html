@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Nemuide Application Development">
+    <meta name="author" content="Nemuide Application Development">
+
+    <title>Nemuide Application Development</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <!-- Customs Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ICONS -->
+    <link rel="shortcut icon" href="images/nemu.png" type="image/x-icon">
+  </head>
+
+  <body>
+    <!-- Menu Navigasi Atas -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <!-- Logo Images -->
+          <a class="navbar-brand logo-nav" href="index.html">
+            <img src="images/logos.png" width="200" alt="Nemuide Logo">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home <span>Welcome</span></a></li>
+            <li><a href="portofolio.html">Services <span>Portofolio</span> </a></li>
+            <li><a href="clients.html">Clients<span>Our Clients</span></a></li>
+            <li><a href="about.html">About <span>Who Are We ?</span> </a></li>
+            <li class="active"><a href="contact.html">Contact <span>Get In Touch</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container  -->
+    </nav><!--/.nav -->
+  
+   <div class="wow animated fadeIn">
+      <section class="section-title">
+        <div class="container">
+            <h1>Contact <small>get in touch</small></h1> 
+        </div>
+      </section>
+
+      <section class="section-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <hr>
+              <h3 class="text-center text-subheader">contact us</h3>
+              <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-contact-us col-md-7">
+              <h4 style="margin-bottom: 20px;text-align: center;" >Want to Discuss With Us? Type Your Message Below</h4>
+              <form class="form-horizontal" role="form" action="respon.php" method="post">
+                <div class="form-group">
+                <div>
+                  <input type="text" name="first_name" class="form-control" id="inputName" placeholder="Name" required="required">
+                </div>
+                </div>
+                <div class="form-group">
+                <div>
+                  <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required="required">
+                </div>
+                </div>
+                <div class="form-group">
+                <div>
+                  <input type="text" name="subject" class="form-control" id="inputSubject" placeholder="Subject" required="required">
+                </div>
+                </div>
+                <div class="form-group">
+                <div>
+                  <textarea name="message" class="form-control" rows="3" placeholder="Message" required="required"></textarea>
+                </div>
+                </div>
+                <div class="form-group" align="middle">
+                  <div class="g-recaptcha" data-sitekey="6Lc5JBkTAAAAAKF0UvH4b6CGq4mDZd496UouU6IT"></div>
+                </div>
+                <div class="form-group">
+                <div>
+                 <button type="submit" name="submit" class="btn-custom btn btn-default btn-lg btn-block">Send message</button>
+                </div>
+                </div>
+              </form>
+            </div><!--/.col-md-8-->
+            <div class="other-informations col-md-4 col-md-offset-1">
+              <h4 style="margin-bottom : 20px;">OUR SOCIALS</h4>
+              <hr>
+              <p style="margin-bottom: 10px;">
+                <span class="fa-stack fa-lg" style="margin-right : 5px;">
+                  <i style="color : #0383c0;" class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+                <a style="color : #666" target="_blank" href="https://www.facebook.com/nemuide.apps.development">
+                  Nemuide Apps Development
+                </a>
+              </p>
+              <h4 style="margin-top : 20px; margin-bottom : 20px;">OUR OFFICE</h4>
+              <hr>
+              <p style="color : #666">
+                <span class="fa-stack fa-lg" style="margin-right : 5px;">
+                  <i style="color : #0383c0;" class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-location-arrow fa-stack-1x fa-inverse"></i>
+                </span>
+                Jl.Pembangunan II Pekalongan, Jawa Tengah
+              </p>
+            </div><!--/.col-md-4 -->
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <!-- Google Maps -->
+              <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'>
+              </script>
+              <div style='overflow:hidden;height:300px;width:100%;'>
+                <div id='gmap_canvas' style='height:300px;width:100%;'></div>
+              <div>
+                <small><a href="http://embedgooglemaps.com">embed google map</a></small></div>
+                <div>
+                  <small><a href="http://freedirectorysubmissionsites.com/">free web directories</a></small>
+                </div>
+                <style>#gmap_canvas img{max-width:none!important;backgrounsd:none!important}</style>
+              </div>
+              <script type='text/javascript'>function init_map(){var myOptions = {zoom:13,center:new google.maps.LatLng(-6.8864189,109.665488),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(-6.8864189,109.665488)});infowindow = new google.maps.InfoWindow({content:'<strong>Our Office Location</strong><br>Jl.Pembangunan II Pekalongan, Indonesia <br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);
+              </script>
+            </div><!--/.col-md-8-->
+          </div>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Copyright &copy; 2016 By <a href="index.html"><span style="font-weight : bold;color :#0383c0"> Nemuide App Development </span></a> All Right Reserved</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div> <!--end div animated -->
+
+    <!-- JQuery Core -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Wow JS -->
+    <script src="js/wow.js"></script>
+    <!-- Lightbox JS -->
+    <script src="js/lightbox.js"></script>
+    <!-- Activating Wow JS (init start) -->
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
